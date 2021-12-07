@@ -1925,6 +1925,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -1961,6 +1967,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
 //
 //
 //
@@ -42748,7 +42757,7 @@ var render = function() {
               _c("div", { staticClass: "table-responsive" }, [
                 _c(
                   "table",
-                  { staticClass: "table" },
+                  { staticClass: "table table table-striped" },
                   [
                     _vm._m(0),
                     _vm._v(" "),
@@ -42756,7 +42765,7 @@ var render = function() {
                       return _c("tr", { key: item.id }, [
                         _c("td", [_vm._v(_vm._s(item.namalevel))]),
                         _vm._v(" "),
-                        _c("td", [_vm._v("Edit | Hapus")])
+                        _vm._m(1, true)
                       ])
                     })
                   ],
@@ -42775,10 +42784,22 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("tr", [
-      _c("th", [_vm._v("Nama Level")]),
+    return _c("thead", { staticClass: "thead-light" }, [
+      _c("tr", [
+        _c("th", [_vm._v("Nama Level")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Aksi")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("td", [
+      _c("i", { staticClass: "fas fa-edit blue" }),
       _vm._v(" "),
-      _c("th", [_vm._v("Aksi")])
+      _c("i", { staticClass: "fas fa-trash-alt red" })
     ])
   }
 ]
@@ -42833,7 +42854,7 @@ var render = function() {
               _c("div", { staticClass: "table-responsive" }, [
                 _c(
                   "table",
-                  { staticClass: "table" },
+                  { staticClass: "table table table-striped" },
                   [
                     _vm._m(0),
                     _vm._v(" "),
@@ -43236,14 +43257,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("tr", [
-      _c("th", [_vm._v("Nama Pengguna")]),
-      _vm._v(" "),
-      _c("th", [_vm._v("Level")]),
-      _vm._v(" "),
-      _c("th", [_vm._v("Email")]),
-      _vm._v(" "),
-      _c("th", [_vm._v("Aksi")])
+    return _c("thead", { staticClass: "thead-light" }, [
+      _c("tr", [
+        _c("th", [_vm._v("Nama Pengguna")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Level")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Email")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Aksi")])
+      ])
     ])
   },
   function() {

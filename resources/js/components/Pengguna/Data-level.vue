@@ -8,14 +8,20 @@
           <div class="card-body">
             <div class="form-group">
               <div class="table-responsive">
-                <table class="table">
-                  <tr>
+                <table class="table table table-striped">
+                  <thead class="thead-light">
+                    <tr>
                     <th>Nama Level</th>
                     <th>Aksi</th>
                   </tr>
+                  </thead>
+                  
                   <tr v-for="item in levels" :key="item.id">
                     <td>{{ item.namalevel }}</td>
-                    <td>Edit | Hapus</td>
+                    <td>
+                      <i class="fas fa-edit blue"></i>
+                      <i class="fas fa-trash-alt red"></i>
+                    </td>
                   </tr>
                 </table>
               </div>

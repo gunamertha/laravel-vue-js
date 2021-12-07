@@ -18,13 +18,16 @@
                     <div class="card-body">
                         <div class="form-group">
                             <div class="table-responsive">
-                                <table class="table">
-                                    <tr>
+                                <table class="table table table-striped">
+                                    <thead class="thead-light">
+                                       <tr>
                                         <th>Nama Pengguna</th>
                                         <th>Level</th>
                                         <th>Email</th>
                                         <th>Aksi</th>
-                                    </tr>
+                                    </tr> 
+                                    </thead>
+                                    
                                     <tr v-for="item in users" :key="item.id">
                                         <td>{{ item.name }}</td>
                                         <td>{{ item.level_id }}</td>
